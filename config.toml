@@ -26,5 +26,5 @@ theme = "ika-i2b"
 
 # Ubuntu and emacs sometimes create temp files that make Hugo go crash.
 # Ignore them.
-ignoreFiles = ['*@*', '.*~', '*#*']
+ignoreFiles = ['.*@.*', '.*~', '.*#.*']
 
