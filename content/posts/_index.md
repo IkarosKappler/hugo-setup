@@ -1,9 +1,12 @@
 ---
 title: "My Posts"
-date: 2022-05-15T19:02:13Z
-layout: default
+date: 2022-04-15T19:02:13Z
 draft: false
-tags: ["foo", "bar"]
----
+type: post
+--- 
+
 
 Posts list?
+
+
+ 

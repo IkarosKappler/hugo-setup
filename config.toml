@@ -22,4 +22,9 @@ theme = "ika-i2b"
     weight = 3
 
 
-sectionPagesMenu = "main"
+# sectionPagesMenu = "main"
+
+# Ubuntu and emacs sometimes create temp files that make Hugo go crash.
+# Ignore them.
+ignoreFiles = ['*@*', '.*~', '*#*']
+

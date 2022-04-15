@@ -1,12 +1,11 @@
 ---
-title: "My First Hugo Post"
+title: "My First Hugo Post x"
 date: 2022-05-15T18:46:13Z
-layout: default
-draft: true
-tags: ["foo", "bar"]
 ---
 
+
 Porting my website from Twig to Hugo.
+
 
 Setup my custom Hugo theme from scratch:
 https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/
