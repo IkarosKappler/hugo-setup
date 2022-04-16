@@ -1,0 +1,41 @@
+{
+  "short_name": "Ika's Codebase",
+  "name": "Ikaros Kappler's Codebase",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/favicon-64x64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "/favicon-64x64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "/favicon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }  
+  ],
+  "start_url": "/",
+  "background_color": "#2FA29D",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#2FA29D"
+}

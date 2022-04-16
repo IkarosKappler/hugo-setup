@@ -167,8 +167,9 @@ header a:active, a:hover {
     color          : #0088d8; 
 }
 
+/*
 .header-banner {
-    background: url('/resources/triangle-background-17-square2-refactor-alpha.svg'), linear-gradient(to right, rgba(47,162,157,1) 50%, rgba(64,255,64,1)); 
+    background: url('/img/triangle-background-17-square2-refactor-alpha.svg'), linear-gradient(to right, rgba(47,162,157,1) 50%, rgba(64,255,64,1)); 
     background-position : top left;
     background-repeat   : no-repeat;
     background-size     : cover;
@@ -176,6 +177,7 @@ header a:active, a:hover {
     height              : 300px;
     font-family         : sfpixelate, Monospace, Helvetica;
 }
+*/
 
 header .logo {
     background-color    : transparent;
