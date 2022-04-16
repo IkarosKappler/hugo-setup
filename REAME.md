@@ -4,7 +4,15 @@ Date 2022-04-15
 Author Ikaros Kappler
 
 Test
-~> hugo server
+~> hugo server -D
 
-Build
+Build (with drafts)
 ~> hugo -D
+
+Todos:
+* head.html: check if $production var is properly propagated
+* head.html: .description in pages?
+* head.html: .keywords in pages?
+* Check Site.socialImage
+
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    {{ $production := eq (getenv "HUGO_ENV") "production" | or (eq site.Params.env "production") }}
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}

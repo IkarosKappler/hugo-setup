@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Ika's Codebase"
 
 theme = "ika-i2b"
 
@@ -27,4 +27,9 @@ theme = "ika-i2b"
 # Ubuntu and emacs sometimes create temp files that make Hugo go crash.
 # Ignore them.
 ignoreFiles = ['.*@.*', '.*~', '.*#.*']
+
+
+description = "Description"
+keywords = "keywords"
+socialImage = "https://www.int2byte.de/img/preview-image.png"
 

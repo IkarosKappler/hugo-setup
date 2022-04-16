@@ -1,9 +1,51 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    {{ $title := print .Site.Title " | " .Title }}
-    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
-    <title>{{ $title }}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8" />
+      {{ $title := print .Site.Title " | " .Title }}
+      {{ if .IsHome }}{{ $title = print .Site.Title | print "Contents of of/" }}{{ end }}
+      <title>{{ $title }}</title>
+      <meta name="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="author" content="Ikaros Kappler">
+      {{ if isset .Params "description" }} <meta name="description" content="{{ .description }}"> {{ end }} 
+      {{ if isset .Params "keywords" }} <meta name="keywords" content="{{ .keywords }}"> {{ end }}
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+      <link rel="icon" href="/favicon.png" type="image/png">
+      <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">  
+      <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">  
+      <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+      <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">  
+      <link rel="icon" type="image/png" href="/favicon-512x512.png" sizes="512x512">
+
+      {{/* TODO: */}}
+      {{/* include 'structured-data.twig' with { 'type' : type, 'name' : title, 'image' : image, 'description' : description } */}}
+
+      {{/* Place the twitter card before the open graph tags */}}
+      
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@humanearthpig">
+      <meta name="twitter:creator" content="@humanearthpig">
+      {{/* Place the open graph tags after the twitter cards */}}
+      
+      <meta property="og:url" content="{{ .Site.BaseURL }}">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Ikaros Kappler's codebase">
+      <meta property="og:description" content="Ikaros Kappler's codebase.">
+      <meta property="og:image" content="{{ if isset .Params "socialImage" }}{{ .Params.socialImage }}{{ else }}https://www.int2byte.de/img/preview-image.png{{end}}">
+
+      {{ $production := eq (getenv "HUGO_ENV") "production" | or (eq site.Params.env "production") }}
+      {{ if $production }}
+        <script async src="/js/core.min.js"></script>
+        <link rel="stylesheet" href="/css/styles.min.css">
+      {{ else }}
+        <link rel="stylesheet" href="/css/base.css">
+        <link rel="stylesheet" href="/css/pageheader.css">
+        <link rel="stylesheet" href="/css/navigation-underlines.css">
+        <script async src="/js/pageheader.js"></script>
+        <script async src="/js/mediaquerydetection.js"></script>
+      {{ end }}
+      <link rel="manifest" href="/manifest.json">
 </head>
+
+
