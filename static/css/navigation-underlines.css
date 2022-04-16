@@ -1,0 +1,26 @@
+/* Animate the underlins of nav */
+nav ul li:nth-child(n+2),
+nav ul li:nth-child(n+2):after {
+  transition : width .5s;
+}
+
+nav ul li:nth-child(n+2) {
+    position : relative;
+}
+
+nav ul li:nth-child(n+2):after {
+  position   : absolute;
+  top        : 10px;
+  left       : 15px;
+  right      : 0;
+  margin     : auto;
+  width      : 0px;
+  content    : '.';
+  color      : transparent;
+  background : grey;
+  height     : 1px; 
+}
+
+nav ul li:nth-child(n+2):hover:after {
+    width    : 80%;
+}

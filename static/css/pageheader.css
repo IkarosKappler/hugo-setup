@@ -1,0 +1,171 @@
+@font-face{ 
+    font-family: 'sfpixelate';
+    src: url('sf_pixelate-webfont.eot');
+    src: url('sf_pixelate-webfont.eot?#iefix') format('embedded-opentype'),
+    url('sf_pixelate-webfont.woff') format('woff'),
+    url('sf_pixelate-webfont.ttf') format('truetype'),
+    url('sf_pixelate-webfont.svg#webfont') format('svg');
+}
+
+header {
+    height              : 360px;
+    z-index             : 10;
+}
+header a:link, a:visited {
+    color          : #888888; 
+}
+header a:active, a:hover {
+    color          : #0088d8; 
+}
+
+.header-banner {
+    background: url('/resources/triangle-background-17-square2-refactor-alpha.svg'), linear-gradient(to right, rgba(47,162,157,1) 50%, rgba(64,255,64,1)); 
+    background-position : top left;
+    background-repeat   : no-repeat;
+    background-size     : cover;
+    width               : 100%;
+    height              : 300px;
+    font-family         : sfpixelate, Monospace, Helvetica;
+}
+
+header .logo {
+    background-color    : transparent;
+    /* background-image    : url('../img/icon_blank_cropped.anthrazit.png'); */
+    /* background-image    : url('../img/icon-blank-large.svg'); */
+    background-image    : url('../img/icon-blank-small.svg');
+    background-size     : cover;
+    background-position : center top;
+    background-repeat   : no-repeat;
+    position            : absolute;
+    left                : 64px;
+    top                 : 52px;
+    height              : 184px;
+    /* height              : 192px; -- large svg image */
+    /* width               : 192px; -- The png image */
+    width               : 123px;
+}
+
+header .avatar {
+    display : inline-block;
+    background-color: transparent;
+    background-image: url('../img/avatar-old.jpg');
+    background-size : cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 128px;
+    width: 128px;
+    -moz-border-radius: 64px;
+    -webkit-border-radius: 64px;
+    -khtml-border-radius: 64px;
+    border-radius: 64px;
+}
+
+.small-avatar {
+    height : 64px !important;
+    width : 64px !important;    
+}
+
+header h1 {
+    position: absolute;
+    top: 72px; 
+    left: 240px;
+    color: #fff;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #292f36;
+    z-index: 10;
+}
+
+nav ul {
+    display : inline-block;
+    list-style-type: none;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align:right;
+    width: 960px; 
+    max-width: 100%;
+    margin-top : -48px;
+    height : 0px;
+}
+
+nav ul.small-nav {
+    margin-top : 0px !important;
+}
+
+nav ul.small-nav li:nth-child(n+2) {
+    margin-top : -24px;
+}
+
+
+nav ul li { 
+    display: inline-block; 
+    line-height: 60px;
+    margin-left: 10px;
+    vertical-align : middle;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #a9abae;
+}
+
+/* The nav icon left to the nav item text */
+nav ul li a div.nav-icon { }
+
+/* The nav icon text */
+nav ul li a span {
+    padding-left : 16px;
+}
+
+/* First nav link red */
+nav:hover ul li:nth-of-type(3n+2) a { 
+    color: #e00000;
+}
+
+/* Second nav link green */ 
+nav:hover ul li:nth-of-type(3n+3) a {
+    color: #00a800;
+}
+
+/* Third nav link blue */
+nav:hover ul li:nth-of-type(3n+4) a {
+    color: #00a8ff;
+}
+
+nav:hover ul li a:hover {
+    color: orange;
+}
+
+
+/* Icon animation */
+nav ul li div.nav-icon {
+    display : inline-block;
+    position : absolute;
+    margin-top : -350px;
+
+    webkit-transition: margin-top 0.5s;
+       moz-transition: margin-top 0.5s;
+        ms-transition: margin-top 0.5s;
+         o-transition: margin-top 0.5s;
+	   transition: margin-top 0.5s;
+}
+nav:hover ul li div.nav-icon {
+    margin-top : 0px;
+
+    webkit-transition: margin-top 0.25s;
+       moz-transition: margin-top 0.25s;
+        ms-transition: margin-top 0.25s;
+         o-transition: margin-top 0.25s;
+           transition: margin-top 0.25s;
+}

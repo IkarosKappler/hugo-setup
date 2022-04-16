@@ -14,5 +14,5 @@ Todos:
 * head.html: .description in pages?
 * head.html: .keywords in pages?
 * Check Site.socialImage
-
+* footer: check if there are any pages with footer overrides
 

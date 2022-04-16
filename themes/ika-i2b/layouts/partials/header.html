@@ -1,3 +1,4 @@
+{{/*
 <div id="nav-border" class="container">
     <nav id="nav" class="nav justify-content-center">
         {{ range .Site.Menus.main }}
@@ -11,4 +12,26 @@
         </a>
         {{ end }}
     </nav>
+</div>
+*/}}
+
+
+<header id="pageheader">
+  <div class="header-banner">
+    <a href="/" class="logo"></a>	  
+    <h1>{{ if isset .Params "bannertext" }}{{ .Params.bannertext }}{{ else }}Oooh, that thing has numbers on it.{{ end }}</h1>
+  </div>
+  <div class="clear"></div>
+  <nav id="nav">
+    <ul id="nav_ul">
+      <li><a href="#"><div class="avatar" id="avatar"></div></a></li>
+      <li><a href="/public"><div class="nav-icon">▷</div><span>public</span></a></li>
+      <li><a href="https://www.github.com/ikaroskappler" target="_blank"><div class="nav-icon">▷</div><span>@github</span></a></li>
+      <li><a href="/contact"><div class="nav-icon">▷</div><span>contact</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="header">
+  <h1>{{ .Page.Title }}</h1>
 </div>
