@@ -11,7 +11,7 @@
 
 var resizeCanvas = function( canvas, context, config, callback ) {
     var _setSize = function(w,h) {
-	// console.log( 'setSize: ' + w + 'x' + h );
+	// console.log( 'resizeCanvas setSize: ' + w + 'x' + h );
 	context.canvas.width  = w;
 	context.canvas.height = h;
 	
@@ -22,6 +22,14 @@ var resizeCanvas = function( canvas, context, config, callback ) {
 	    callback(w,h);
     };
     if( config.fullSize ) _setSize( window.innerWidth, window.innerHeight );
+	else if( config.fitToParent ) {
+		console.log("FIT TO PARENT");
+		var container = context.canvas.parentNode; // Element | Document | DocumentFragment;
+		// context.canvas.style.display = "none";
+		var w = container.clientWidth;
+		var h = container.clientHeight;
+		_setSize( w, h );
+	}
     else                  _setSize( config.width, config.height );
 };
 //$( window ).resize( resizeCanvas );

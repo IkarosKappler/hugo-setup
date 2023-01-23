@@ -3,11 +3,22 @@
 Date 2022-04-15
 Author Ikaros Kappler
 
+Ubuntu
+```bash
+ sudo apt-get install hugo
+```
+
 Test
-~> hugo server -D
+```bash
+ hugo server -D
+```
+
 
 Build (with drafts)
-~> hugo -D
+```bash
+ hugo -D
+```
+
 
 Todos:
 * head.html: check if $production var is properly propagated

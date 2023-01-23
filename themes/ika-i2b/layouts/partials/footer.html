@@ -1,3 +1,9 @@
 <footer>
   <a href="https://www.int2byte.de/">int2byte.de</a> | <a href="https://www.int2byte.de/imprint/">Impressum und Datenschutz</a>
 </footer>
+
+{{ if .IsHome }}
+        <link rel="stylesheet" href="/css/index.css">
+        <script src="/js/canvasResize.js"></script>
+        <script src="/js/girih.min.js"></script>
+      {{ end }}

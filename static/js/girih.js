@@ -4227,12 +4227,12 @@ function onLoad() {
 	var resizer = function() {
 	    resizeCanvas(girihCanvasHandler.canvas,
 			 girihCanvasHandler.context,
-			 {fullSize:true},
+			 {fullSize:false,fitToParent:true},
 			 function(w,h) {
 			     console.log('canvas resized. w='+w+',h='+h);
 			     girihCanvasHandler.canvasWidth = w;
 			     girihCanvasHandler.canvasHeight = h;
-			     girihCanvasHandler.drawOffset.setXY(w/2,h/1.7);
+			     girihCanvasHandler.drawOffset.setXY(w/4,h/4);
 			 }
 			);
 	    redrawGirih();

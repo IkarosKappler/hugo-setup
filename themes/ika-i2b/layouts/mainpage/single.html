@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+<br><br>
+
+{{ range .Paginator.Pages }}
+{{ if not .Params.hidden }}
+<div class="relative w-100 w-30-l mb4 bg-white">
+  {{ .Render "postsummaryfront" }}
+</div>
+{{ end }}
+{{ end }}
+
+
+{{ .Content }}
+
+<div id="front-canvas">
+    <canvas 
+  id="girih_canvas" 
+  style="background-color: #ffffff;"
+  class="tooltip" 
+  height="600" width="800"
+  title="Hover over existing tiles to see possible adjacent tiles.
+
+Press [a] or [d] to navigate through the tile set.
+
+Press [Enter] or click to place new tiles onto the canvas.
+
+Press [o] to toggle the outlines on/off.
+
+Press [t] to toggle the textures on/off.
+
+Press [e] to save an image file."></canvas>
+</div>
+{{ end }}

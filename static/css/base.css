@@ -15,8 +15,17 @@ body main, #nav {
     font-size : 10pt;
 }
 
+
+main {
+    margin-top     : 40px;
+}
+
 .w-100 {
     width : 100%;
+}
+
+.mt0 {
+    margin-top: 5px;
 }
 
 a:link, a:active, a:hover {

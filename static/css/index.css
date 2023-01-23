@@ -1,17 +1,24 @@
 
 canvas#girih_canvas {
-    position  : fixed;
+    /* position  : fixed;
     left      : 0px;
     top       : 0px;
-    z-index   : -1;
+    z-index   : -1; */
 }
 
+div#front-canvas {
+    display : block; 
+    height: 50vh; 
+    width: 100%; 
+    /* To remove the scrollbars */
+}
+/* 
 main {
-    margin-top     : 100px;
+    margin-top     : 20px;
     padding        : 0;
-}
+} */
 
-div#bloglist {
+/* div#bloglist {
     width            : 0px;
     height           : 0px;
     padding-left     : 10%;
@@ -38,6 +45,6 @@ div#bloglist ul li a {
 div#bloglist div.spacer {
     width : 10px;
     height : 250px;
-}
+} */
 
 

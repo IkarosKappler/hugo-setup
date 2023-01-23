@@ -99,6 +99,10 @@ nav ul {
     height : 0px;
 }
 
+nav ul li:last-child {
+    margin-right: 25px;
+}
+
 nav ul.small-nav {
     margin-top : 0px !important;
 }
